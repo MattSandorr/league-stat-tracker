@@ -1,0 +1,257 @@
+{
+  "gameId": 5624610249,
+  "mapId": 11,
+  "gameMode": "CLASSIC",
+  "gameType": "MATCHED",
+  "gameQueueConfigId": 420,
+  "participants": [
+    {
+      "puuid": "a99iaOhjW3sHqi-N5kPK4mvajkiM4Afp8a14YncAW5shgn98aoGCCrTOSYACFWz-Pxjr_6hPncpC3A",
+      "teamId": 100,
+      "spell1Id": 4,
+      "spell2Id": 14,
+      "championId": 166,
+      "lastSelectedSkinIndex": 0,
+      "profileIconId": 7096,
+      "riotId": "2015 Challenger#NQGC",
+      "bot": false,
+      "gameCustomizationObjects": [],
+      "perks": {
+        "perkIds": [
+          8005
+        ],
+        "perkStyle": 8000,
+        "perkSubStyle": 8200
+      }
+    },
+    {
+      "puuid": "YPbqoscXSp5i46ks6MGiLuF41aQufUHCc_C8hhec-a751eioVDouRmGeYt-aAo6M0tIyGDguyxwakA",
+      "teamId": 100,
+      "spell1Id": 4,
+      "spell2Id": 11,
+      "championId": 517,
+      "lastSelectedSkinIndex": 53,
+      "profileIconId": 7175,
+      "riotId": "limpfork#NA1",
+      "bot": false,
+      "gameCustomizationObjects": [],
+      "perks": {
+        "perkIds": [
+          8010
+        ],
+        "perkStyle": 8000,
+        "perkSubStyle": 8300
+      }
+    },
+    {
+      "puuid": "XfUSiHaYKesyrh0tKQ5kdnkBQWAXioDdI6P7SZPp8BfliCpICRliGzG5iSwlsXqIurNz9g9t_6Sw5w",
+      "teamId": 100,
+      "spell1Id": 21,
+      "spell2Id": 4,
+      "championId": 221,
+      "lastSelectedSkinIndex": 40,
+      "profileIconId": 4803,
+      "riotId": "Matchu#420",
+      "bot": false,
+      "gameCustomizationObjects": [],
+      "perks": {
+        "perkIds": [
+          8010
+        ],
+        "perkStyle": 8000,
+        "perkSubStyle": 8300
+      }
+    },
+    {
+      "puuid": "jdy8V_7Ogc4jV_JVgN9bgqKHSjVf4rI7uh7Kj1b5yAeX__amIN6B-7QKHLCg_kXkbtEWmNHMQljG3g",
+      "teamId": 100,
+      "spell1Id": 12,
+      "spell2Id": 6,
+      "championId": 75,
+      "lastSelectedSkinIndex": 5,
+      "profileIconId": 873,
+      "riotId": "Blank or Bengi#NA1",
+      "bot": false,
+      "gameCustomizationObjects": [],
+      "perks": {
+        "perkIds": [
+          8021
+        ],
+        "perkStyle": 8000,
+        "perkSubStyle": 8400
+      }
+    },
+    {
+      "puuid": "Ie6TsHqomrkWAmWUkZs_EhsddOrIQoEEIZBA5fHy_MVwO9mmoO6D1OuWUWLimpu7GMhz57YJVVI94A",
+      "teamId": 100,
+      "spell1Id": 3,
+      "spell2Id": 7,
+      "championId": 350,
+      "lastSelectedSkinIndex": 49,
+      "profileIconId": 7,
+      "riotId": "Out Am I#PK1",
+      "bot": false,
+      "gameCustomizationObjects": [],
+      "perks": {
+        "perkIds": [
+          8214
+        ],
+        "perkStyle": 8200,
+        "perkSubStyle": 8400
+      }
+    },
+    {
+      "puuid": "sswAclEs7Fbhmx02Twv3hhXf8Unm16vMpNMJpVcd9odgkgWk-WTNgrg2mdPz3_Cc3ZhPkPNJZ-3BdA",
+      "teamId": 200,
+      "spell1Id": 4,
+      "spell2Id": 21,
+      "championId": 429,
+      "lastSelectedSkinIndex": 1,
+      "profileIconId": 3440,
+      "riotId": "ChainRule#NA1",
+      "bot": false,
+      "gameCustomizationObjects": [],
+      "perks": {
+        "perkIds": [
+          8008
+        ],
+        "perkStyle": 8000,
+        "perkSubStyle": 8100
+      }
+    },
+    {
+      "puuid": "nfmI28xO6y_0AtuZJCcBvBeodqlzg6tKd4jK28ffbj7G02wgvZvFO-sejuDH0OQZkV0it3MkRnOuQQ",
+      "teamId": 200,
+      "spell1Id": 11,
+      "spell2Id": 4,
+      "championId": 154,
+      "lastSelectedSkinIndex": 0,
+      "profileIconId": 11,
+      "riotId": "Perfect Tomorrow#Anima",
+      "bot": false,
+      "gameCustomizationObjects": [],
+      "perks": {
+        "perkIds": [
+          8010
+        ],
+        "perkStyle": 8000,
+        "perkSubStyle": 8300
+      }
+    },
+    {
+      "puuid": "1iEuikelBCfkifO9v9cEa2dzk_ZTLAPP9iCl8_XnhK4nd7EJga0euaWw9qJpwWE1blx5tajRKyEvlg",
+      "teamId": 200,
+      "spell1Id": 7,
+      "spell2Id": 4,
+      "championId": 526,
+      "lastSelectedSkinIndex": 23,
+      "profileIconId": 6622,
+      "riotId": "Fedaykin#WORM",
+      "bot": false,
+      "gameCustomizationObjects": [],
+      "perks": {
+        "perkIds": [
+          8439
+        ],
+        "perkStyle": 8400,
+        "perkSubStyle": 8000
+      }
+    },
+    {
+      "puuid": "ZwLyRY4lTMa_CMF8Rq4qi5mFaRmSaAtX_bYGhn48osLg8cHdTIJbiZFBJ27red_LrekiBiO-uqGDiw",
+      "teamId": 200,
+      "spell1Id": 4,
+      "spell2Id": 14,
+      "championId": 157,
+      "lastSelectedSkinIndex": 9,
+      "profileIconId": 5736,
+      "riotId": "Nutilize#NA1",
+      "bot": false,
+      "gameCustomizationObjects": [],
+      "perks": {
+        "perkIds": [
+          8008
+        ],
+        "perkStyle": 8000,
+        "perkSubStyle": 8400
+      }
+    },
+    {
+      "puuid": "CZnIUi5mNTikY7d-3bvZRMUG_CeFfHvn5lKbivtrCL54VxOrcASxwFGRackQ1hgwBrSHA9aNHeBuTA",
+      "teamId": 200,
+      "spell1Id": 4,
+      "spell2Id": 14,
+      "championId": 17,
+      "lastSelectedSkinIndex": 14,
+      "profileIconId": 7011,
+      "riotId": "MonsterRat#KR00",
+      "bot": false,
+      "gameCustomizationObjects": [],
+      "perks": {
+        "perkIds": [
+          8437
+        ],
+        "perkStyle": 8400,
+        "perkSubStyle": 8100
+      }
+    }
+  ],
+  "observers": {
+    "encryptionKey": "TPRfVAOZe2mySG/qUscd1MBQDQdvcx/X"
+  },
+  "platformId": "NA1",
+  "bannedChampions": [
+    {
+      "championId": 51,
+      "teamId": 100,
+      "pickTurn": 1
+    },
+    {
+      "championId": 122,
+      "teamId": 100,
+      "pickTurn": 2
+    },
+    {
+      "championId": 111,
+      "teamId": 100,
+      "pickTurn": 3
+    },
+    {
+      "championId": 36,
+      "teamId": 100,
+      "pickTurn": 4
+    },
+    {
+      "championId": 134,
+      "teamId": 100,
+      "pickTurn": 5
+    },
+    {
+      "championId": 80,
+      "teamId": 200,
+      "pickTurn": 6
+    },
+    {
+      "championId": 145,
+      "teamId": 200,
+      "pickTurn": 7
+    },
+    {
+      "championId": 81,
+      "teamId": 200,
+      "pickTurn": 8
+    },
+    {
+      "championId": 62,
+      "teamId": 200,
+      "pickTurn": 9
+    },
+    {
+      "championId": 90,
+      "teamId": 200,
+      "pickTurn": 10
+    }
+  ],
+  "gameStartTime": 1787178806281,
+  "gameLength": -112
+}

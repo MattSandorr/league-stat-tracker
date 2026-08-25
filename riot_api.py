@@ -69,41 +69,38 @@ def get_live_stats(puuid): #live game for build helper
        print(f"Error {response.status_code}: {response.text}")
        return None
    
-# def find_my_stats(match_data, my_puuid):
-#     for participant in match_data["info"]["participants"]:
-#         if participant["puuid"] == my_puuid:
-#             return participant
-#     return None
-   
 print("script started")
 
+# if __name__ == "__main__":
+#    result = get_puuid_riot_id("Matchu", "420")
+#    print(result)
+
+#    if result: 
+#       puuid = result["puuid"]
+#       summoner_data = get_summoner(puuid)
+#       print("Summoner data", summoner_data)
+
+#       rank_data = get_rank(puuid)
+#       print("RANK",rank_data)
+
+#       match_id = get_match_id(puuid,20)
+#       print("match ids",match_id)
+
+#       if match_id:
+#          first_match_id = match_id[0]
+#          match_stats = get_match_stats(first_match_id)
+#          print("match stats",match_stats)
+import json
+
 if __name__ == "__main__":
-   result = get_puuid_riot_id("Matchu", "420")
-   print(result)
-
-   if result: 
-      puuid = result["puuid"]
-      summoner_data = get_summoner(puuid)
-      print("Summoner data", summoner_data)
-
-      rank_data = get_rank(puuid)
-      print("RANK",rank_data)
-
-      match_id = get_match_id(puuid,20)
-      print("match ids",match_id)
-
-      if match_id:
-         first_match_id = match_id[0]
-         match_stats = get_match_stats(first_match_id)
-         print("match stats",match_stats)
-
-      # my_stats = find_my_stats(match_stats,puuid)
-
-      # if my_stats:
-      #     print("Champion:", my_stats["championName"])
-      #     print("Kills:", my_stats["kills"])
-      #     print("Deaths:", my_stats["deaths"])
-      #     print("Assists:", my_stats["assists"])             
-      #     print("Win:", my_stats["win"])
-      # else:
-      #     print("Couldn't find your stats in this match")
+    account_data = get_puuid_riot_id("Matchu", "420")
+    puuid = account_data["puuid"]
+    
+    live_data = get_live_stats(puuid)
+    
+    if live_data:
+        with open("sample_live_game.json", "w") as f:
+            json.dump(live_data, f, indent=2)
+        print("Saved live game data!")
+    else:
+        print("Not currently in a game")
