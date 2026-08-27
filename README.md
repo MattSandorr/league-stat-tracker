@@ -120,65 +120,79 @@ contain build evidence from every participant in collected matches.
 - `config.py` loads the Riot API key and region settings from `.env`.
 - `sample_live_game.json` is a sample spectator payload used for development and
   manual testing.
-- `.gitignore` prevents local secrets, databases, caches, and generated Python
-  files from being committed.
 
-## Setup
+## Languages, tools, frameworks, and skills
 
-Use Python 3.10 or newer and install the external dependencies:
+### Languages and data formats
 
-```powershell
-pip install requests python-dotenv
-```
+- **Python** is the main programming language for the API clients, data
+  collector, databases, recommendation engine, command-line tools, and GUI.
+- **SQL** is used through SQLite to create tables, indexes, relationships, and
+  queries for personal statistics and build evidence.
+- **JSON** is used for Riot API responses, Data Dragon metadata, cached static
+  data, sample live-game data, and collector output.
+- **Markdown** is used for project documentation in this README.
+- **Environment-variable configuration** is stored in `.env` format so the Riot
+  API key is kept outside the source code and Git history.
 
-Create a `.env` file in the project folder:
+### Frameworks and Python libraries
 
-```dotenv
-RIOT_API_KEY=your_riot_development_api_key
-```
+- **Tkinter and ttk** provide the desktop interface, tabs, forms, buttons,
+  status messages, and scrollable result panels.
+- **Requests** handles Riot API, Data Dragon, and local League Live Client HTTP
+  requests.
+- **urllib3** is used to handle the local Live Client's self-signed HTTPS
+  certificate warning.
+- **python-dotenv** loads the Riot API key from the local `.env` file.
+- **sqlite3** provides the two local databases without requiring a separate
+  database server.
+- **threading** keeps network collection and live-game detection from freezing
+  the Tkinter window.
+- **argparse** provides command-line interfaces for match collection and live
+  recommendations.
+- Standard-library modules including **pathlib**, **collections**, **json**,
+  **contextlib**, and **urllib.parse** support caching, aggregation,
+  serialization, safe database handling, and URL construction.
 
-Tkinter is included with the standard Windows Python installation.
+### APIs and game-data services
 
-## Run the GUI
+- **Riot Account-V1** resolves a Riot name and tag to a PUUID.
+- **Summoner-V4 and League-V4** provide account and ranked information for the
+  personal tracker.
+- **Match-V5** supplies completed matches and detailed item-event timelines.
+- **Spectator-V5** provides the remote active-game fallback.
+- **League Live Client Data API** detects the current local game, participants,
+  teams, champions, positions, and lane opponent.
+- **Data Dragon** provides patch-aware champion and item names, IDs, tags,
+  recipes, prices, and map availability.
 
-```powershell
-python main.py
-```
+### Development tools
 
-The dashboard has three tabs:
+- **Git** provides local version control and commit history.
+- **GitHub** hosts the repository and receives changes from the `main` branch.
+- **PowerShell** is used to run the application, collector, checks, and Git
+  commands on Windows.
 
-- **Personal Stats** reads the matches currently stored in `data/tracker.db`.
-- **Live Build** detects the active League game and creates a recommendation.
-- **Build Data** collects matches and shows the current `data/builds.db`
-  coverage.
+### Technical skills demonstrated
 
-## Collect build data from the command line
-
-Look up a PUUID:
-
-```powershell
-python -c "import riot_api; print(riot_api.get_puuid_riot_id('NAME', 'TAG')['puuid'])"
-```
-
-Collect up to 20 current-patch ranked matches:
-
-```powershell
-python build_collector.py --puuid "YOUR_PUUID" --count 20
-```
-
-Include older patches when building a broader initial dataset:
-
-```powershell
-python build_collector.py --puuid "YOUR_PUUID" --count 20 --include-old-patches
-```
-
-## Run the live assistant from the command line
-
-With League running and a game in progress:
-
-```powershell
-python live_build_assistant.py --name "NAME" --tag "TAG"
-```
-
-Role and lane-opponent arguments are optional overrides because the local Live
-Client Data API normally detects them automatically.
+- REST API integration, authentication headers, regional routing, JSON parsing,
+  response validation, error handling, and Riot rate-limit reporting.
+- Relational database and schema design using primary keys, foreign keys,
+  indexes, transactions, normalized tables, and parameterized SQL queries.
+- ETL-style data collection: extracting Riot responses, transforming matches
+  and timelines into consistent records, and loading atomic bundles into
+  SQLite.
+- Data aggregation and recommendation logic using sample counts, wins, win
+  rates, ordered build paths, opponent filters, and patch-aware fallbacks.
+- Timeline/event reconstruction for first shopping sessions, item purchase
+  order, sales, undos, boots, and final completed builds.
+- Dynamic static-data caching and champion/item ID mapping without hardcoded
+  champion or role item pools.
+- Desktop GUI development with reusable views, form validation, background
+  threads, and safe updates back onto Tkinter's UI thread.
+- Command-line interface design for reusable collection and recommendation
+  workflows.
+- Separation of concerns between API access, persistence, analytics, build
+  logic, live-game orchestration, and presentation.
+- Secret management with environment variables and `.gitignore`, plus a basic
+  Git and GitHub commit/push workflow.
