@@ -1,5 +1,4 @@
-import riot_api
-import database
+from tracker_gui import main as launch_gui
 
-def get_my_stats(my_puuid, match_stats):
-   pass
+if __name__ == "__main__":
+   launch_gui()

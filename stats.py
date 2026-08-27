@@ -74,7 +74,6 @@ def win_by_role(matches):
         if match["win"] == 1:
             role_stats[role]["wins"] += 1
 
-    # now compute win rate per role
     result = {}
     for role, stats in role_stats.items():
         result[role] = stats["wins"] / stats["total"] * 100
@@ -90,4 +89,4 @@ def champ_pool(matches):
          champ_count[champ] +=1
       else:
          champ_count[champ] =1
-   return sorted(champ_count.items(), key=lambda item: item[1], reverse=True)   
+   return sorted(champ_count.items(), key=lambda item: item[1], reverse=True)

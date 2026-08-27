@@ -53,7 +53,3 @@ def get_all_matches():
    columns = [description[0] for description in cursor.description]
    conn.close()
    return [dict(zip(columns, row)) for row in rows]
-
-# if __name__ == "__main__":
-#     matches = get_all_matches()
-#     print(matches)

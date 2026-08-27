@@ -71,25 +71,6 @@ def get_live_stats(puuid): #live game for build helper
    
 print("script started")
 
-# if __name__ == "__main__":
-#    result = get_puuid_riot_id("Matchu", "420")
-#    print(result)
-
-#    if result: 
-#       puuid = result["puuid"]
-#       summoner_data = get_summoner(puuid)
-#       print("Summoner data", summoner_data)
-
-#       rank_data = get_rank(puuid)
-#       print("RANK",rank_data)
-
-#       match_id = get_match_id(puuid,20)
-#       print("match ids",match_id)
-
-#       if match_id:
-#          first_match_id = match_id[0]
-#          match_stats = get_match_stats(first_match_id)
-#          print("match stats",match_stats)
 import json
 
 if __name__ == "__main__":
