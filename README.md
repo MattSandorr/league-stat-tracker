@@ -131,9 +131,6 @@ contain build evidence from every participant in collected matches.
   queries for personal statistics and build evidence.
 - **JSON** is used for Riot API responses, Data Dragon metadata, cached static
   data, sample live-game data, and collector output.
-- **Markdown** is used for project documentation in this README.
-- **Environment-variable configuration** is stored in `.env` format so the Riot
-  API key is kept outside the source code and Git history.
 
 ### Frameworks and Python libraries
 
@@ -165,34 +162,3 @@ contain build evidence from every participant in collected matches.
   teams, champions, positions, and lane opponent.
 - **Data Dragon** provides patch-aware champion and item names, IDs, tags,
   recipes, prices, and map availability.
-
-### Development tools
-
-- **Git** provides local version control and commit history.
-- **GitHub** hosts the repository and receives changes from the `main` branch.
-- **PowerShell** is used to run the application, collector, checks, and Git
-  commands on Windows.
-
-### Technical skills demonstrated
-
-- REST API integration, authentication headers, regional routing, JSON parsing,
-  response validation, error handling, and Riot rate-limit reporting.
-- Relational database and schema design using primary keys, foreign keys,
-  indexes, transactions, normalized tables, and parameterized SQL queries.
-- ETL-style data collection: extracting Riot responses, transforming matches
-  and timelines into consistent records, and loading atomic bundles into
-  SQLite.
-- Data aggregation and recommendation logic using sample counts, wins, win
-  rates, ordered build paths, opponent filters, and patch-aware fallbacks.
-- Timeline/event reconstruction for first shopping sessions, item purchase
-  order, sales, undos, boots, and final completed builds.
-- Dynamic static-data caching and champion/item ID mapping without hardcoded
-  champion or role item pools.
-- Desktop GUI development with reusable views, form validation, background
-  threads, and safe updates back onto Tkinter's UI thread.
-- Command-line interface design for reusable collection and recommendation
-  workflows.
-- Separation of concerns between API access, persistence, analytics, build
-  logic, live-game orchestration, and presentation.
-- Secret management with environment variables and `.gitignore`, plus a basic
-  Git and GitHub commit/push workflow.
